@@ -217,4 +217,66 @@ Write a function that finds the uncle of a node
 * If `node` is `NULL`, return `NULL`
 * If `node` has no uncle, return `NULL`
 
-19.
+19. Lowest common ancestor
+
+Write a function that finds the lowest common ancestor of two nodes
+
+* Prototype: `binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);`
+* Where `first` is a pointer to the first node
+* And `second` is a pointer to the second node
+* Your function must return a pointer to the lowest common ancestor node of the two given nodes
+* If no common ancestor was found, your function must return `NULL`
+
+20. Level-order traversal
+
+Write a function that goes through a binary tree using level-order traversal
+
+* Prototype: `void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));`
+* Where `tree` is a pointer to the root node of the tree to traverse
+* And `func` is a pointer to a function to call for each node. The value in the node must be passed as a parameter to this function.
+* If `tree` or `func` is `NULL`, do nothing
+
+21. Is complete
+
+Write a function that checks if a binary tree is complete
+
+* Prototype: `int binary_tree_is_complete(const binary_tree_t *tree);`
+* Where `tree` is a pointer to the root node of the tree to check
+* If `tree` is `NULL`, your function must return `0`
+
+22. Rotate left
+
+Write a function that performs a left-rotation on a binary tree
+
+* Prototype: `binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);`
+* Where `tree` is a pointer to the root node of the tree to rotate
+* Your function must return a pointer to the new root node of the tree once rotated
+
+23. Rotate right
+
+Write a function that performs a right-rotation on a binary tree
+
+* Prototype: `binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);`
+* Where `tree` is a pointer to the root node of the tree to rotate
+* Your function must return a pointer to the new root node of the tree once rotated
+
+24. Is BST
+
+Write a function that checks if a binary tree is a valid Binary Search Tree
+
+* Prototype: `int binary_tree_is_bst(const binary_tree_t *tree);`
+* Where `tree` is a pointer to the root node of the tree to check
+* Your function must return `1` if `tree` is a valid BST, and `0` otherwise
+* If `tree` is `NULL`, return `0`
+
+25. BST - Insert
+
+Write a function that inserts a value in a Binary Search Tree
+
+* Prototype: `bst_t *bst_insert(bst_t **tree, int value);`
+* Where `tree` is a double pointer to the root node of the BST to insert the value
+* And `value` is the value to store in the node to be inserted
+* Your function must return a pointer to the created node, or `NULL` on failure
+* If the address stored in `tree` is `NULL`, the created node must become the root node.
+* If the value is already present in the tree, it must be ignored
+* Your file `0-binary_tree_node.c` will be compile during the correction

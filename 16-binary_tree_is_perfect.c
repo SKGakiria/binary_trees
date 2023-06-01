@@ -1,5 +1,7 @@
 #include "binary_trees.h"
 
+int _pow_recursion(int x, int y);
+
 /**
  * binary_tree_height - function that measures the height of a binary tree
  * @tree: a pointer to the root node of the tree to measure the height
