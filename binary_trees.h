@@ -1,5 +1,6 @@
 #ifndef BINARY_TREES_H
 #define BINARY_TREES_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -59,5 +60,9 @@ binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 int binary_tree_is_bst(const binary_tree_t *tree);
 bst_t *bst_insert(bst_t **tree, int value);
+bst_t *array_to_bst(int *array, size_t size);
+bst_t *bst_search(const bst_t *tree, int value);
+bst_t *bst_remove(bst_t *root, int value);
+int binary_tree_is_avl(const binary_tree_t *tree);
 
 #endif
